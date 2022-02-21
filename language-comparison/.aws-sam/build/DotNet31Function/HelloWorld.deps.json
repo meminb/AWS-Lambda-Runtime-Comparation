@@ -1,0 +1,773 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1/linux-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {},
+    ".NETCoreApp,Version=v3.1/linux-x64": {
+      "HelloWorld/1.0.0": {
+        "dependencies": {
+          "Amazon.Lambda.APIGatewayEvents": "2.4.0",
+          "Amazon.Lambda.Core": "2.0.0",
+          "Amazon.Lambda.Serialization.SystemTextJson": "2.1.0",
+          "Thundra.Agent": "3.0.3"
+        },
+        "runtime": {
+          "HelloWorld.dll": {}
+        }
+      },
+      "Amazon.Lambda.APIGatewayEvents/2.4.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.APIGatewayEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.CloudWatchEvents/3.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.CloudWatchEvents.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.CloudWatchLogsEvents/2.1.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.CloudWatchLogsEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.Core/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Lambda.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.DynamoDBEvents/2.0.0": {
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.0.50"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Lambda.DynamoDBEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.KinesisEvents/2.0.0": {
+        "dependencies": {
+          "AWSSDK.Kinesis": "3.7.0.49"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Lambda.KinesisEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.KinesisFirehoseEvents/2.1.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.KinesisFirehoseEvents.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.S3Events/2.0.1": {
+        "dependencies": {
+          "AWSSDK.S3": "3.7.1.21"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.S3Events.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.Serialization.SystemTextJson/2.1.0": {
+        "dependencies": {
+          "Amazon.Lambda.Core": "2.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.Serialization.SystemTextJson.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.SNSEvents/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Lambda.SNSEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Amazon.Lambda.SQSEvents/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Lambda.SQSEvents.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AWSSDK.Core/3.7.2.1": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.2.1"
+          }
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.7.0.50": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.2.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.0.50"
+          }
+        }
+      },
+      "AWSSDK.Kinesis/3.7.0.49": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.2.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Kinesis.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.0.49"
+          }
+        }
+      },
+      "AWSSDK.KinesisFirehose/3.7.0.49": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.2.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.KinesisFirehose.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.0.49"
+          }
+        }
+      },
+      "AWSSDK.Lambda/3.7.2.6": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.2.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Lambda.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.2.6"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.1.21": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.2.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.1.21"
+          }
+        }
+      },
+      "AWSSDK.SimpleEmail/3.7.0.49": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.2.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleEmail.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.0.49"
+          }
+        }
+      },
+      "AWSSDK.SimpleNotificationService/3.7.2.20": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.2.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.2.20"
+          }
+        }
+      },
+      "AWSSDK.SQS/3.7.0.50": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.2.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SQS.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.0.50"
+          }
+        }
+      },
+      "DnsClient/1.4.0": {
+        "runtime": {
+          "lib/netstandard2.1/DnsClient.dll": {
+            "assemblyVersion": "1.4.0.0",
+            "fileVersion": "1.4.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration/3.1.17": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.17"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31514"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/3.1.17": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.17"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31514"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/3.1.17": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.17"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31514"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/3.1.17": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.17",
+          "Microsoft.Extensions.FileProviders.Physical": "3.1.17"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31514"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/3.1.17": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.17",
+          "Microsoft.Extensions.Configuration.FileExtensions": "3.1.17"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31514"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/3.1.17": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.17"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31514"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/3.1.17": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "3.1.17",
+          "Microsoft.Extensions.FileSystemGlobbing": "3.1.17"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31514"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/3.1.17": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31514"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/3.1.17": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31514"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.1.17": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "3.1.17.0",
+            "fileVersion": "3.100.1721.31514"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.1.2": {},
+      "MongoDB.Bson/2.13.1": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Bson.dll": {
+            "assemblyVersion": "2.13.1.0",
+            "fileVersion": "2.13.1.0"
+          }
+        }
+      },
+      "MongoDB.Driver/2.13.1": {
+        "dependencies": {
+          "MongoDB.Bson": "2.13.1",
+          "MongoDB.Driver.Core": "2.13.1",
+          "MongoDB.Libmongocrypt": "1.2.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Driver.dll": {
+            "assemblyVersion": "2.13.1.0",
+            "fileVersion": "2.13.1.0"
+          }
+        }
+      },
+      "MongoDB.Driver.Core/2.13.1": {
+        "dependencies": {
+          "DnsClient": "1.4.0",
+          "MongoDB.Bson": "2.13.1",
+          "MongoDB.Libmongocrypt": "1.2.2",
+          "SharpCompress": "0.23.0",
+          "System.Buffers": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Driver.Core.dll": {
+            "assemblyVersion": "2.13.1.0",
+            "fileVersion": "2.13.1.0"
+          }
+        }
+      },
+      "MongoDB.Libmongocrypt/1.2.2": {
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {
+            "assemblyVersion": "1.2.2.0",
+            "fileVersion": "1.2.2.0"
+          }
+        },
+        "native": {
+          "runtimes/linux/native/libmongocrypt.so": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "OpenTracing/0.12.0": {
+        "runtime": {
+          "lib/netstandard2.0/OpenTracing.dll": {
+            "assemblyVersion": "0.12.0.0",
+            "fileVersion": "0.12.0.0"
+          }
+        }
+      },
+      "SharpCompress/0.23.0": {
+        "dependencies": {
+          "System.Text.Encoding.CodePages": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpCompress.dll": {
+            "assemblyVersion": "0.23.0.0",
+            "fileVersion": "0.23.0.0"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {},
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.2",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
+        }
+      },
+      "Thundra.Agent/3.0.3": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.2.1",
+          "AWSSDK.DynamoDBv2": "3.7.0.50",
+          "AWSSDK.Kinesis": "3.7.0.49",
+          "AWSSDK.KinesisFirehose": "3.7.0.49",
+          "AWSSDK.Lambda": "3.7.2.6",
+          "AWSSDK.S3": "3.7.1.21",
+          "AWSSDK.SQS": "3.7.0.50",
+          "AWSSDK.SimpleEmail": "3.7.0.49",
+          "AWSSDK.SimpleNotificationService": "3.7.2.20",
+          "Amazon.Lambda.APIGatewayEvents": "2.4.0",
+          "Amazon.Lambda.CloudWatchEvents": "3.0.0",
+          "Amazon.Lambda.CloudWatchLogsEvents": "2.1.0",
+          "Amazon.Lambda.Core": "2.0.0",
+          "Amazon.Lambda.DynamoDBEvents": "2.0.0",
+          "Amazon.Lambda.KinesisEvents": "2.0.0",
+          "Amazon.Lambda.KinesisFirehoseEvents": "2.1.0",
+          "Amazon.Lambda.S3Events": "2.0.1",
+          "Amazon.Lambda.SNSEvents": "2.0.0",
+          "Amazon.Lambda.SQSEvents": "2.0.0",
+          "Amazon.Lambda.Serialization.SystemTextJson": "2.1.0",
+          "Microsoft.Extensions.Configuration": "3.1.17",
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.17",
+          "Microsoft.Extensions.Configuration.Binder": "3.1.17",
+          "Microsoft.Extensions.Configuration.FileExtensions": "3.1.17",
+          "Microsoft.Extensions.Configuration.Json": "3.1.17",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.17",
+          "MongoDB.Driver": "2.13.1",
+          "Newtonsoft.Json": "13.0.1",
+          "OpenTracing": "0.12.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Thundra.Agent.dll": {
+            "assemblyVersion": "3.0.3.0",
+            "fileVersion": "3.0.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HelloWorld/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Amazon.Lambda.APIGatewayEvents/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QDDGZq2RwY4BBn2ai/dLLCdeHZBp1cSwqrjAe/m371z6Sv6pza8ZsVnZYxE+Dqmhh4UF0uZ6t520tVqOYcEzzQ==",
+      "path": "amazon.lambda.apigatewayevents/2.4.0",
+      "hashPath": "amazon.lambda.apigatewayevents.2.4.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.CloudWatchEvents/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WAovn+f3MUzyMsy+88dFwkuSbjcTG23yDJvKfDq/JlX7I7v5ZQeEZ1FYYdjubIY7iGgXHurHsv1NjurYA1QC+g==",
+      "path": "amazon.lambda.cloudwatchevents/3.0.0",
+      "hashPath": "amazon.lambda.cloudwatchevents.3.0.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.CloudWatchLogsEvents/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6a8eptoCs6Q+/LB68zxlROOG3c7iQQ7bv6Qwx64mflL2U4XhTI068teMxztgNZtyGW6F92g1jVSNc/bqEHALCA==",
+      "path": "amazon.lambda.cloudwatchlogsevents/2.1.0",
+      "hashPath": "amazon.lambda.cloudwatchlogsevents.2.1.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.Core/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V4fw3pYuP1LyUJThpbrbLwy2b4TH3CPYh5oId/CgJvGkX7lSAVyOEmkdGvDhpjegxnS4rgw6tP7faftVBO9jwQ==",
+      "path": "amazon.lambda.core/2.0.0",
+      "hashPath": "amazon.lambda.core.2.0.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.DynamoDBEvents/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AIJW3Vv4mtdR+WD7TkKbVfDUw7uVEbBhWgU2ln68i/qToQitxbK7BTtz7hV+EgVvphawBfVMwKnx5zpV/T9zwQ==",
+      "path": "amazon.lambda.dynamodbevents/2.0.0",
+      "hashPath": "amazon.lambda.dynamodbevents.2.0.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.KinesisEvents/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wgSrDsAD8bDJbpfbK5Sg4eqp6p2BJQn+rqLAFHr/cXMFuF6XDwqbMFUrhUIG09DqIl++TFHvNDyy/0ySESDBZQ==",
+      "path": "amazon.lambda.kinesisevents/2.0.0",
+      "hashPath": "amazon.lambda.kinesisevents.2.0.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.KinesisFirehoseEvents/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B12wRuHCFS8BJVufBIcoK0jixEAZctDsUpDvCExjMA1qW9+CmujnA0HsFlUWRR5iKcPQ6ovHF5d7oR2spIghag==",
+      "path": "amazon.lambda.kinesisfirehoseevents/2.1.0",
+      "hashPath": "amazon.lambda.kinesisfirehoseevents.2.1.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.S3Events/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PGEMrodAzXzfrQI0AAUP7Wckmh3AvdOsuNQVF0kVYAX1b3jI0YkAcIkixCzkheDHRf1SUF3ROFilYv+JO2SDhg==",
+      "path": "amazon.lambda.s3events/2.0.1",
+      "hashPath": "amazon.lambda.s3events.2.0.1.nupkg.sha512"
+    },
+    "Amazon.Lambda.Serialization.SystemTextJson/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q2R4I77NrrAHDpcaWby9VA/XhE1tjG/2kpredwucRq7k4dTPCqqB7OFmbiFdlfuErrp2/9+X1l62c4unwVicpw==",
+      "path": "amazon.lambda.serialization.systemtextjson/2.1.0",
+      "hashPath": "amazon.lambda.serialization.systemtextjson.2.1.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.SNSEvents/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NzEV+hsQygpukxwuyN4gyOINYhFGOilc6uSuHIeTRiOncz+dvtw100UbeBxObCMuAbofL9U4yidKV/rObnpInQ==",
+      "path": "amazon.lambda.snsevents/2.0.0",
+      "hashPath": "amazon.lambda.snsevents.2.0.0.nupkg.sha512"
+    },
+    "Amazon.Lambda.SQSEvents/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hL9l47f5/xSjmoavILhmS5qjoeDXxRPl0wWKc7muxXKH/DGeFmU+iCz0lx9a/lNjHXqZt/IVlVe4y1pswM7JDA==",
+      "path": "amazon.lambda.sqsevents/2.0.0",
+      "hashPath": "amazon.lambda.sqsevents.2.0.0.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W0dxLGNhSaAKzXUk2/PCG901SbF1LAN8OkWAicm8dpmKv4HQXO6/GHF/7ZqgPSsWdVwmVmWai8mKk/wSXhVBrg==",
+      "path": "awssdk.core/3.7.2.1",
+      "hashPath": "awssdk.core.3.7.2.1.nupkg.sha512"
+    },
+    "AWSSDK.DynamoDBv2/3.7.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hhBMxSGsXpf/JcHPeuZvHSM3OO0c4VzKFXqn+H92oBUZXOkfaJbLqkmFo1tAFpd5E9adK82Yg/vtkYS9bu7xNA==",
+      "path": "awssdk.dynamodbv2/3.7.0.50",
+      "hashPath": "awssdk.dynamodbv2.3.7.0.50.nupkg.sha512"
+    },
+    "AWSSDK.Kinesis/3.7.0.49": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GRgyaZsvX/+IRtlSnJpTkddTNWkA/F2fAHS0zcS3Dnywi9AuRD5EFCS8Wi+d/tNZCBTNnktK4uFPnmher22yag==",
+      "path": "awssdk.kinesis/3.7.0.49",
+      "hashPath": "awssdk.kinesis.3.7.0.49.nupkg.sha512"
+    },
+    "AWSSDK.KinesisFirehose/3.7.0.49": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T8Z0co11ypy8sIeTFEtUU3kZqm055pk3BNn7IwaxuTrRsO6ugcNg5A9jOWVJEXXJ4wm1T8zEAP+s5BapUpwJKg==",
+      "path": "awssdk.kinesisfirehose/3.7.0.49",
+      "hashPath": "awssdk.kinesisfirehose.3.7.0.49.nupkg.sha512"
+    },
+    "AWSSDK.Lambda/3.7.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+eMWqmRY4F6PozfAGJPS0YKpAWnxF2QwPGhbcz2D2b4VAZN/QCPN7GBXbiDdEmyhvOPsEH1qUNNP8hGQP24XJQ==",
+      "path": "awssdk.lambda/3.7.2.6",
+      "hashPath": "awssdk.lambda.3.7.2.6.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.1.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ewWQEHo1EHDradTpbMu+8cGNjotLawuac7p9vLEWbLRxmObSu7C6sCCU+U0iFKdv9hCi/8jw4TUH7cOjbXEPlA==",
+      "path": "awssdk.s3/3.7.1.21",
+      "hashPath": "awssdk.s3.3.7.1.21.nupkg.sha512"
+    },
+    "AWSSDK.SimpleEmail/3.7.0.49": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aKoOHCZI3hglnzbsY2NbN2KVF7NsuwMdIbyHHbKZMvz41BjYW2ban9qkcodkrWrasEARIakPJTFWDl/SvOPxmA==",
+      "path": "awssdk.simpleemail/3.7.0.49",
+      "hashPath": "awssdk.simpleemail.3.7.0.49.nupkg.sha512"
+    },
+    "AWSSDK.SimpleNotificationService/3.7.2.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LndJffLNWQzet2eboV7IOfqjAJ/rIbnGiGlLZo6qQqxN2DaNIrCz/az1Iz1yalAG6F6O4GDF7dBN2pvrqJuwRg==",
+      "path": "awssdk.simplenotificationservice/3.7.2.20",
+      "hashPath": "awssdk.simplenotificationservice.3.7.2.20.nupkg.sha512"
+    },
+    "AWSSDK.SQS/3.7.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-igFroi4+HZCz69QePflXGKAIBJ45JCWB2DdN2rrVQ+ERvPkSYMFeweZUIsTJCaFHsAvYszNuube3pOCC5hTxzQ==",
+      "path": "awssdk.sqs/3.7.0.50",
+      "hashPath": "awssdk.sqs.3.7.0.50.nupkg.sha512"
+    },
+    "DnsClient/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CO1NG1zQdV0nEAXmr/KppLZ0S1qkaPwV0kPX5YPgmYBtrBVh1XMYHM54IXy3RBJu1k4thFtpzwo4HNHqxiuFYw==",
+      "path": "dnsclient/1.4.0",
+      "hashPath": "dnsclient.1.4.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-izMhve9pDG2rLt8mVxpD5zyJGtdR6HWY0KCAUnTeGvuuD4xaoMlCzNseozzmY6+qGXljQnofZ86rMnDkn18oWg==",
+      "path": "microsoft.extensions.configuration/3.1.17",
+      "hashPath": "microsoft.extensions.configuration.3.1.17.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mPQm9EkeqyvwPBKxeb6Zag66p2LoBNqnoG/5ULH49yIOYyR5JcauM4YhlxqDtNON/j/JK388TM8JJ0MFrDEmKg==",
+      "path": "microsoft.extensions.configuration.abstractions/3.1.17",
+      "hashPath": "microsoft.extensions.configuration.abstractions.3.1.17.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Binder/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q7m3yzpEFagTmkc+IeRedRsO0l8AK4lh7q1CxkU1FTWs8QcmSssmvLFoKx0lNRNHIaWfDCDyGFNNfiwoYqELoA==",
+      "path": "microsoft.extensions.configuration.binder/3.1.17",
+      "hashPath": "microsoft.extensions.configuration.binder.3.1.17.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y2aOjnVzMdpldZ4YfIe1ZyJ2uWnQ++5Acbon/+2eLrcOllLK085E1ETydvSQzSHcBR/KgZr6/k3zX2OWj0I2Pw==",
+      "path": "microsoft.extensions.configuration.fileextensions/3.1.17",
+      "hashPath": "microsoft.extensions.configuration.fileextensions.3.1.17.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Json/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X0O0xaLUH6gn4ROtm4UcMoXnJz1qQOd8cNA+C1O7MDMNHjLx0iIa29A6GgI/CxbBOK2gwfJwHJt3oLBt7sYtNQ==",
+      "path": "microsoft.extensions.configuration.json/3.1.17",
+      "hashPath": "microsoft.extensions.configuration.json.3.1.17.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mewqqZtZidqSKUE7anay0k4PfahoP+3qo7jt1tmXX5PdaLoK0zq6SnKeZW536yGuoFG87B0EQ3WTN2sxcI8eig==",
+      "path": "microsoft.extensions.fileproviders.abstractions/3.1.17",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.3.1.17.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Physical/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CvFUdvfBdVLVBgGoukm6/7/gEYCVGGtV3X+T0RvxN4csmYOfBZ+isiF+nPoUv5G8IJyeA6VfjX3HLrItRsHaBQ==",
+      "path": "microsoft.extensions.fileproviders.physical/3.1.17",
+      "hashPath": "microsoft.extensions.fileproviders.physical.3.1.17.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dz+MXNrfrQdupTfVnhUY1eZWIQFkUk4ssDIBJi6vAcAFOPMu32snXXl+EPL0saXVwWHPv04LLvXRJwIM2YhsIA==",
+      "path": "microsoft.extensions.filesystemglobbing/3.1.17",
+      "hashPath": "microsoft.extensions.filesystemglobbing.3.1.17.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Gdg+cirn19y3GaXHdmbka9zjyP8mKPgp/ELWr00tujm2aJjQONa+DPkUWoYZltVT27BL/hlWLwki5TXFI6CQig==",
+      "path": "microsoft.extensions.logging.abstractions/3.1.17",
+      "hashPath": "microsoft.extensions.logging.abstractions.3.1.17.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/3.1.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Dps198+KGasKjBZ66s9cOMJjZJZ2GJ3hHrmHcKiCXMB9r4ZDsD7wDXbswiGVf+da5WglA28ZFpxX1kq5S9TCGQ==",
+      "path": "microsoft.extensions.primitives/3.1.17",
+      "hashPath": "microsoft.extensions.primitives.3.1.17.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mOJy3M0UN+LUG21dLGMxaWZEP6xYpQEpLuvuEQBaownaX4YuhH6NmNUlN9si+vNkAS6dwJ//N1O4DmLf2CikVg==",
+      "path": "microsoft.netcore.platforms/2.1.2",
+      "hashPath": "microsoft.netcore.platforms.2.1.2.nupkg.sha512"
+    },
+    "MongoDB.Bson/2.13.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B/AI2we7YwfFuNcXr4jlCnVI5dJp+g8vkyj3Shi/bOpGhZQaxW4jK/NiiTwYvqxaMOe4MtVR+6Zlk4D2zalC7A==",
+      "path": "mongodb.bson/2.13.1",
+      "hashPath": "mongodb.bson.2.13.1.nupkg.sha512"
+    },
+    "MongoDB.Driver/2.13.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BGpE1Ce33T3MrStgxC4CPLVDA2ngsI+WZk4SYn+ycOaU5uQ7zwbQzqpdzHrS7EcMNVpD9r2wnpjos0nxhxvshw==",
+      "path": "mongodb.driver/2.13.1",
+      "hashPath": "mongodb.driver.2.13.1.nupkg.sha512"
+    },
+    "MongoDB.Driver.Core/2.13.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lLYYMBneLHA9PYwWzbfC3p0NkAqzxbT8ZuinCH9MwR2bgHqu/6cOaJG12twKsnjc6KJVBboY0ufjHt43T9ZLnA==",
+      "path": "mongodb.driver.core/2.13.1",
+      "hashPath": "mongodb.driver.core.2.13.1.nupkg.sha512"
+    },
+    "MongoDB.Libmongocrypt/1.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pKrlKJk4wem4MyfkaMqj+sqJ+RwUDnqnt76/Xwm5DDjMzEU5QtDkzQOLq5bVwFhNgC8LMn6Hr22tl5WsmN5+AA==",
+      "path": "mongodb.libmongocrypt/1.2.2",
+      "hashPath": "mongodb.libmongocrypt.1.2.2.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "OpenTracing/0.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bGp7SSFE6YEUCts3npTvyAVnU4QznXLWKwkhhdlFnCD4bwgtxcNHTfE+KFYUPS0oR8j5L3YfQHUO2Ar2xjFBew==",
+      "path": "opentracing/0.12.0",
+      "hashPath": "opentracing.0.12.0.nupkg.sha512"
+    },
+    "SharpCompress/0.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HBbT47JHvNrsZX2dTBzUBOSzBt+EmIRGLIBkbxcP6Jef7DB4eFWQX5iHWV3Nj7hABFPCjISrZ8s0z72nF2zFHQ==",
+      "path": "sharpcompress/0.23.0",
+      "hashPath": "sharpcompress.0.23.0.nupkg.sha512"
+    },
+    "System.Buffers/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "path": "system.buffers/4.5.1",
+      "hashPath": "system.buffers.4.5.1.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4J2JQXbftjPMppIHJ7IC+VXQ9XfEagN92vZZNoG12i+zReYlim5dMoXFC1Zzg7tsnKDM7JPo5bYfFK4Jheq44w==",
+      "path": "system.text.encoding.codepages/4.5.1",
+      "hashPath": "system.text.encoding.codepages.4.5.1.nupkg.sha512"
+    },
+    "Thundra.Agent/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fgh7iU2LsJowO0z5TkkmhcrQKzB4CtIyxGyBrqO6ypGq5GQbgRngNxt2vW/fF4fK5ycdEFAzuz5PNnCjbrKixg==",
+      "path": "thundra.agent/3.0.3",
+      "hashPath": "thundra.agent.3.0.3.nupkg.sha512"
+    }
+  }
+}

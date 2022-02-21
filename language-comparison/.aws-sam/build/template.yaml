@@ -1,0 +1,116 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'lambda comparison
+
+  '
+Parameters:
+  ThundraAWSAccountNo:
+    Type: Number
+    Default: 269863060030
+  ThundraNodeLayerVersion:
+    Type: Number
+    Default: 105
+  ThundraPythonLayerVersion:
+    Type: Number
+    Default: 56
+  ThundraJavaLayerVersion:
+    Type: Number
+    Default: 65
+Globals:
+  Function:
+    Timeout: 20
+    Environment:
+      Variables:
+        thundra_apiKey: f1b50fe3-ec46-4fb7-a560-fecaf1985266
+Resources:
+  DotNet31Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: DotnetCore31-HelloWorld
+      CodeUri: DotNet31Function
+      Handler: Thundra.Agent::Thundra.Agent.Lambda.Core.ThundraProxy::Handle
+      Runtime: dotnetcore3.1
+      MemorySize: 256
+      Environment:
+        Variables:
+          thundra_agent_lambda_handler: HelloWorld::HelloWorld.Function::FunctionHandler
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /dotnet31
+            Method: get
+  Java11Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Java11-HelloWorld
+      CodeUri: Java11Function
+      Handler: io.thundra.agent.lambda.core.handler.ThundraLambdaHandler
+      Runtime: java11
+      MemorySize: 512
+      Environment:
+        Variables:
+          THUNDRA_AGENT_LAMBDA_HANDLER: helloworld.App::handleRequest
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /java11
+            Method: get
+      Layers:
+      - Fn::Sub: arn:aws:lambda:${AWS::Region}:${ThundraAWSAccountNo}:layer:thundra-lambda-java-layer:${ThundraJavaLayerVersion}
+  Go10Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Go1x-HelloWorld
+      CodeUri: Go10Function
+      Handler: hello-world
+      Runtime: go1.x
+      Tracing: Active
+      Events:
+        CatchAll:
+          Type: Api
+          Properties:
+            Path: /go10
+            Method: GET
+  Node14Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Node14-HelloWorld
+      CodeUri: Node14Function
+      Handler: thundra_handler.wrapper
+      Runtime: nodejs14.x
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /node14
+            Method: get
+      Layers:
+      - Fn::Sub: arn:aws:lambda:${AWS::Region}:${ThundraAWSAccountNo}:layer:thundra-lambda-node-layer:${ThundraNodeLayerVersion}
+      Environment:
+        Variables:
+          THUNDRA_AGENT_LAMBDA_HANDLER: app.lambdaHandler
+  Python39Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Python39-HelloWorld
+      CodeUri: Python39Function
+      Handler: thundra.handler.wrapper
+      Runtime: python3.9
+      Environment:
+        Variables:
+          thundra_agent_lambda_handler: app.lambda_handler
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /python39
+            Method: get
+      Layers:
+      - Fn::Sub: arn:aws:lambda:${AWS::Region}:${ThundraAWSAccountNo}:layer:thundra-lambda-python-layer:${ThundraPythonLayerVersion}
+Outputs:
+  EndpointOfAllLambdas:
+    Description: API Gateway endpoint URL for Prod stage for Hello World function
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/
